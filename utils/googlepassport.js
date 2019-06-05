@@ -18,8 +18,8 @@ passport.deserializeUser((userid,done)=>{
 })
 passport.use(new GoogleStrategy({
     callbackURL:'/dashboard',
-    clientID: '327503712678-s4m162dgp458r58enkvd20etdho33o3q.apps.googleusercontent.com',
-    clientSecret: 'GpvNZutdidiUGCMbFKG0CUjg'
+    clientID: 'your client id generated at cloud.console.google.com',
+    clientSecret: 'your secret key can be found on google cloud console'
 },(accessToken,refreshToken, profile, done)=>{
     console.log('callback google...',profile,"token",accessToken);
     
